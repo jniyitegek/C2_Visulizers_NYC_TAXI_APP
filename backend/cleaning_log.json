@@ -1,0 +1,1612 @@
+{
+  "total_records": 1458644,
+  "duplicates_removed": 7,
+  "missing_values_removed": 0,
+  "invalid_coordinates": 998,
+  "invalid_timestamps": 0,
+  "negative_values": 60,
+  "outliers_removed": 74027,
+  "final_records": 1383552,
+  "suspicious_records": [
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id2358953",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-06-27 00:31:28",
+        "dropoff_datetime": "2016-06-27 01:06:44",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.870819091796875",
+        "pickup_latitude": "40.773738861083984",
+        "dropoff_longitude": "-73.857498168945313",
+        "dropoff_latitude": "41.017810821533203",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2116"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id0015493",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-06-12 05:11:44",
+        "dropoff_datetime": "2016-06-12 05:52:35",
+        "passenger_count": "1",
+        "pickup_longitude": "-74.005485534667969",
+        "pickup_latitude": "40.728618621826172",
+        "dropoff_longitude": "-73.643424987792969",
+        "dropoff_latitude": "40.670379638671875",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2451"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id1859156",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-02-17 00:54:13",
+        "dropoff_datetime": "2016-02-17 01:36:27",
+        "passenger_count": "3",
+        "pickup_longitude": "-73.969253540039063",
+        "pickup_latitude": "40.754047393798828",
+        "dropoff_longitude": "-73.593582153320313",
+        "dropoff_latitude": "41.043865203857422",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2534"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id3913560",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-01-11 22:48:55",
+        "dropoff_datetime": "2016-01-11 23:40:20",
+        "passenger_count": "2",
+        "pickup_longitude": "-74.012657165527344",
+        "pickup_latitude": "40.702178955078125",
+        "dropoff_longitude": "-74.307762145996094",
+        "dropoff_latitude": "40.567340850830078",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "3085"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id3502250",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-03-11 20:10:29",
+        "dropoff_datetime": "2016-03-11 20:51:41",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.874595642089844",
+        "pickup_latitude": "40.774082183837891",
+        "dropoff_longitude": "-73.612037658691406",
+        "dropoff_latitude": "40.659595489501953",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2472"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id0304778",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-02-23 20:38:44",
+        "dropoff_datetime": "2016-02-23 21:19:17",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.982925415039062",
+        "pickup_latitude": "40.7618408203125",
+        "dropoff_longitude": "-74.379631042480469",
+        "dropoff_latitude": "40.745273590087891",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2433"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id1782120",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-04-04 06:55:02",
+        "dropoff_datetime": "2016-04-04 08:08:03",
+        "passenger_count": "2",
+        "pickup_longitude": "-73.976676940917969",
+        "pickup_latitude": "40.765071868896484",
+        "dropoff_longitude": "-73.653511047363281",
+        "dropoff_latitude": "40.628108978271484",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "4381"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id3022813",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-06-15 18:02:41",
+        "dropoff_datetime": "2016-06-15 18:03:18",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.55828857421875",
+        "pickup_latitude": "40.781223297119141",
+        "dropoff_longitude": "-73.558280944824219",
+        "dropoff_latitude": "40.781227111816406",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "37"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id2894145",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-06-30 06:27:14",
+        "dropoff_datetime": "2016-06-30 06:50:46",
+        "passenger_count": "5",
+        "pickup_longitude": "-73.781867980957031",
+        "pickup_latitude": "40.644821166992188",
+        "dropoff_longitude": "-73.686546325683594",
+        "dropoff_latitude": "40.741790771484375",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "1412"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id1092161",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-04-15 22:35:08",
+        "dropoff_datetime": "2016-04-16 00:34:21",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.781791687011719",
+        "pickup_latitude": "40.644718170166016",
+        "dropoff_longitude": "-72.711395263671875",
+        "dropoff_latitude": "41.311519622802734",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "7153"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id0633635",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-03-02 13:47:18",
+        "dropoff_datetime": "2016-03-02 14:53:25",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.994026184082031",
+        "pickup_latitude": "40.715553283691406",
+        "dropoff_longitude": "-73.930740356445313",
+        "dropoff_latitude": "41.086540222167969",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "3967"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id3770021",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-02-17 18:59:56",
+        "dropoff_datetime": "2016-02-17 19:40:11",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.862037658691406",
+        "pickup_latitude": "40.764640808105469",
+        "dropoff_longitude": "-73.542152404785156",
+        "dropoff_latitude": "41.052257537841797",
+        "store_and_fwd_flag": "Y",
+        "trip_duration": "2415"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id3733479",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-05-22 03:58:40",
+        "dropoff_datetime": "2016-05-22 03:59:02",
+        "passenger_count": "1",
+        "pickup_longitude": "-74.347068786621094",
+        "pickup_latitude": "40.708518981933594",
+        "dropoff_longitude": "-74.347068786621094",
+        "dropoff_latitude": "40.708522796630859",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "22"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id2286908",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-06-01 23:54:19",
+        "dropoff_datetime": "2016-06-02 00:32:11",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.863845825195313",
+        "pickup_latitude": "40.769695281982422",
+        "dropoff_longitude": "-73.443946838378906",
+        "dropoff_latitude": "40.782321929931641",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2272"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id3092519",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-03-15 18:34:52",
+        "dropoff_datetime": "2016-03-15 18:35:34",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.6485595703125",
+        "pickup_latitude": "40.657745361328125",
+        "dropoff_longitude": "-73.6485595703125",
+        "dropoff_latitude": "40.657741546630859",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "42"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id2873438",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-05-11 14:27:07",
+        "dropoff_datetime": "2016-05-11 15:23:57",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.863883972167969",
+        "pickup_latitude": "40.770076751708984",
+        "dropoff_longitude": "-73.549583435058594",
+        "dropoff_latitude": "40.900566101074219",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "3410"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id0458883",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-02-05 21:03:41",
+        "dropoff_datetime": "2016-02-05 21:38:28",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.873153686523438",
+        "pickup_latitude": "40.774078369140625",
+        "dropoff_longitude": "-73.832817077636719",
+        "dropoff_latitude": "41.059730529785156",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2087"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id3331331",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-02-29 23:48:19",
+        "dropoff_datetime": "2016-03-01 00:21:28",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.862998962402344",
+        "pickup_latitude": "40.768711090087891",
+        "dropoff_longitude": "-73.60601806640625",
+        "dropoff_latitude": "40.85137939453125",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "1989"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id2485138",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-04-17 17:41:00",
+        "dropoff_datetime": "2016-04-17 18:58:44",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.78887939453125",
+        "pickup_latitude": "40.641361236572266",
+        "dropoff_longitude": "-73.834213256835938",
+        "dropoff_latitude": "41.060985565185547",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "4664"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id3191447",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-03-28 15:29:24",
+        "dropoff_datetime": "2016-03-28 16:23:50",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.962516784667969",
+        "pickup_latitude": "40.774826049804687",
+        "dropoff_longitude": "-73.669166564941406",
+        "dropoff_latitude": "40.996639251708984",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "3266"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id2130388",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-06-27 11:51:15",
+        "dropoff_datetime": "2016-06-27 12:09:55",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.782463073730469",
+        "pickup_latitude": "40.644519805908203",
+        "dropoff_longitude": "-73.685920715332031",
+        "dropoff_latitude": "40.681423187255859",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "1120"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id1899262",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-02-26 18:42:29",
+        "dropoff_datetime": "2016-02-26 19:29:45",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.885330200195313",
+        "pickup_latitude": "40.773101806640625",
+        "dropoff_longitude": "-73.760414123535156",
+        "dropoff_latitude": "41.036373138427734",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2836"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id2185383",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-01-24 13:10:30",
+        "dropoff_datetime": "2016-01-24 13:11:12",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.518051147460938",
+        "pickup_latitude": "41.091171264648438",
+        "dropoff_longitude": "-73.518058776855469",
+        "dropoff_latitude": "41.091167449951172",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "42"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id3131125",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-04-13 18:48:30",
+        "dropoff_datetime": "2016-04-13 19:25:28",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.77679443359375",
+        "pickup_latitude": "40.645328521728516",
+        "dropoff_longitude": "-73.608489990234375",
+        "dropoff_latitude": "40.741703033447266",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2218"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id2211191",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-05-25 21:37:43",
+        "dropoff_datetime": "2016-05-25 22:23:16",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.981147766113281",
+        "pickup_latitude": "40.758846282958984",
+        "dropoff_longitude": "-73.863334655761719",
+        "dropoff_latitude": "41.076988220214844",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2733"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id0794168",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-04-23 12:11:18",
+        "dropoff_datetime": "2016-04-23 12:54:29",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.870986938476562",
+        "pickup_latitude": "40.773651123046875",
+        "dropoff_longitude": "-73.686187744140625",
+        "dropoff_latitude": "40.991420745849609",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2591"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id1579722",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-01-16 17:37:49",
+        "dropoff_datetime": "2016-01-16 18:39:13",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.77679443359375",
+        "pickup_latitude": "40.645469665527344",
+        "dropoff_longitude": "-73.864234924316406",
+        "dropoff_latitude": "41.023242950439453",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "3684"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id0830331",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-03-05 17:28:55",
+        "dropoff_datetime": "2016-03-05 18:04:12",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.776847839355469",
+        "pickup_latitude": "40.645214080810547",
+        "dropoff_longitude": "-73.482215881347656",
+        "dropoff_latitude": "40.791866302490234",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2117"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id0356231",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-03-16 21:56:13",
+        "dropoff_datetime": "2016-03-16 22:37:56",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.781135559082031",
+        "pickup_latitude": "40.644920349121094",
+        "dropoff_longitude": "-73.443901062011719",
+        "dropoff_latitude": "40.782306671142578",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2503"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id2700498",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-01-18 18:19:50",
+        "dropoff_datetime": "2016-01-18 18:20:06",
+        "passenger_count": "1",
+        "pickup_longitude": "-74.3935546875",
+        "pickup_latitude": "40.785602569580078",
+        "dropoff_longitude": "-74.398513793945313",
+        "dropoff_latitude": "40.781822204589844",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "16"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id3651786",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-05-03 00:32:41",
+        "dropoff_datetime": "2016-05-03 01:02:15",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.776809692382813",
+        "pickup_latitude": "40.645511627197266",
+        "dropoff_longitude": "-73.653388977050781",
+        "dropoff_latitude": "40.587711334228516",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "1774"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id0738766",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-05-16 20:55:52",
+        "dropoff_datetime": "2016-05-16 21:31:59",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.863937377929688",
+        "pickup_latitude": "40.770149230957031",
+        "dropoff_longitude": "-73.718017578125",
+        "dropoff_latitude": "41.016849517822266",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2167"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id0367149",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-01-09 14:58:08",
+        "dropoff_datetime": "2016-01-09 15:13:20",
+        "passenger_count": "1",
+        "pickup_longitude": "-74.079620361328125",
+        "pickup_latitude": "40.449748992919922",
+        "dropoff_longitude": "-74.062263488769531",
+        "dropoff_latitude": "40.444698333740234",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "912"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id1792628",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-03-07 10:49:49",
+        "dropoff_datetime": "2016-03-07 10:50:20",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.766754150390625",
+        "pickup_latitude": "41.032238006591797",
+        "dropoff_longitude": "-73.766754150390625",
+        "dropoff_latitude": "41.032238006591797",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "31"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id3246710",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-01-11 19:45:16",
+        "dropoff_datetime": "2016-01-11 20:22:42",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.864112854003906",
+        "pickup_latitude": "40.769866943359375",
+        "dropoff_longitude": "-73.424629211425781",
+        "dropoff_latitude": "40.763572692871094",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2246"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id3294370",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-06-14 06:17:32",
+        "dropoff_datetime": "2016-06-14 06:39:20",
+        "passenger_count": "2",
+        "pickup_longitude": "-73.782241821289063",
+        "pickup_latitude": "40.644664764404297",
+        "dropoff_longitude": "-73.680458068847656",
+        "dropoff_latitude": "40.645008087158203",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "1308"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id3587163",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-05-07 22:00:28",
+        "dropoff_datetime": "2016-05-07 22:00:56",
+        "passenger_count": "1",
+        "pickup_longitude": "-74.317344665527344",
+        "pickup_latitude": "40.648521423339844",
+        "dropoff_longitude": "-74.317344665527344",
+        "dropoff_latitude": "40.648521423339844",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "28"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id2676341",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-03-18 23:30:52",
+        "dropoff_datetime": "2016-03-18 23:48:58",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.776802062988281",
+        "pickup_latitude": "40.645301818847656",
+        "dropoff_longitude": "-73.689308166503906",
+        "dropoff_latitude": "40.651176452636719",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "1086"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id0800130",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-03-21 17:01:04",
+        "dropoff_datetime": "2016-03-21 17:01:33",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.804290771484375",
+        "pickup_latitude": "41.002628326416016",
+        "dropoff_longitude": "-73.804283142089844",
+        "dropoff_latitude": "41.002548217773438",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "29"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id3178251",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-04-27 23:30:59",
+        "dropoff_datetime": "2016-04-28 00:04:59",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.99346923828125",
+        "pickup_latitude": "40.757240295410156",
+        "dropoff_longitude": "-74.321517944335938",
+        "dropoff_latitude": "40.779148101806641",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2040"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id2551778",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-04-04 18:10:11",
+        "dropoff_datetime": "2016-04-04 19:15:59",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.789031982421875",
+        "pickup_latitude": "40.64154052734375",
+        "dropoff_longitude": "-73.425033569335937",
+        "dropoff_latitude": "40.763450622558594",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "3948"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id1342718",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-06-01 18:01:45",
+        "dropoff_datetime": "2016-06-01 18:02:36",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.6317138671875",
+        "pickup_latitude": "40.640468597412109",
+        "dropoff_longitude": "-73.633903503417969",
+        "dropoff_latitude": "40.642551422119141",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "51"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id0606515",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-02-17 01:27:19",
+        "dropoff_datetime": "2016-02-17 01:50:24",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.79144287109375",
+        "pickup_latitude": "40.646198272705078",
+        "dropoff_longitude": "-73.650619506835938",
+        "dropoff_latitude": "40.721691131591797",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "1385"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id2959610",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-02-05 08:23:50",
+        "dropoff_datetime": "2016-02-05 09:06:57",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.870452880859375",
+        "pickup_latitude": "40.773521423339844",
+        "dropoff_longitude": "-73.610298156738281",
+        "dropoff_latitude": "40.670829772949219",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2587"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id0240882",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-03-11 11:09:48",
+        "dropoff_datetime": "2016-03-11 12:36:54",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.688804626464844",
+        "pickup_latitude": "41.006000518798828",
+        "dropoff_longitude": "-74.005752563476563",
+        "dropoff_latitude": "40.725509643554688",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "5226"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id1124670",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-06-17 01:53:41",
+        "dropoff_datetime": "2016-06-17 02:58:19",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.871971130371094",
+        "pickup_latitude": "40.741519927978516",
+        "dropoff_longitude": "-73.67474365234375",
+        "dropoff_latitude": "40.753688812255859",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "3878"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id2623995",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-03-11 02:12:25",
+        "dropoff_datetime": "2016-03-11 02:13:15",
+        "passenger_count": "2",
+        "pickup_longitude": "-74.455558776855469",
+        "pickup_latitude": "40.841197967529297",
+        "dropoff_longitude": "-74.455558776855469",
+        "dropoff_latitude": "40.841197967529297",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "50"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id1718992",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-04-03 05:11:20",
+        "dropoff_datetime": "2016-04-03 05:11:49",
+        "passenger_count": "2",
+        "pickup_longitude": "-73.773475646972656",
+        "pickup_latitude": "41.0391845703125",
+        "dropoff_longitude": "-73.773475646972656",
+        "dropoff_latitude": "41.039180755615234",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "29"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id1807865",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-02-11 22:02:10",
+        "dropoff_datetime": "2016-02-11 23:00:00",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.986763000488281",
+        "pickup_latitude": "40.761409759521484",
+        "dropoff_longitude": "-73.642562866210937",
+        "dropoff_latitude": "40.73974609375",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "3470"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id1725649",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-03-15 09:23:41",
+        "dropoff_datetime": "2016-03-15 09:23:45",
+        "passenger_count": "1",
+        "pickup_longitude": "-74.53387451171875",
+        "pickup_latitude": "40.725193023681641",
+        "dropoff_longitude": "-74.533859252929687",
+        "dropoff_latitude": "40.725189208984375",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "4"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id2985010",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-02-08 10:18:29",
+        "dropoff_datetime": "2016-02-08 10:20:56",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.648788452148438",
+        "pickup_latitude": "41.016769409179688",
+        "dropoff_longitude": "-73.647239685058594",
+        "dropoff_latitude": "41.019657135009766",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "147"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id2255271",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-01-16 10:03:02",
+        "dropoff_datetime": "2016-01-16 10:12:44",
+        "passenger_count": "1",
+        "pickup_longitude": "-74.069732666015625",
+        "pickup_latitude": "40.433841705322266",
+        "dropoff_longitude": "-74.0821533203125",
+        "dropoff_latitude": "40.441661834716797",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "582"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id0098463",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-03-30 19:32:16",
+        "dropoff_datetime": "2016-03-30 20:25:26",
+        "passenger_count": "2",
+        "pickup_longitude": "-74.126724243164062",
+        "pickup_latitude": "41.319164276123047",
+        "dropoff_longitude": "-73.93511962890625",
+        "dropoff_latitude": "40.829666137695312",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "3190"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id2164084",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-02-17 09:39:47",
+        "dropoff_datetime": "2016-02-17 10:50:38",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.853889465332031",
+        "pickup_latitude": "40.737285614013672",
+        "dropoff_longitude": "-74.35919189453125",
+        "dropoff_latitude": "40.815261840820312",
+        "store_and_fwd_flag": "Y",
+        "trip_duration": "4251"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id0526741",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-06-09 15:40:59",
+        "dropoff_datetime": "2016-06-09 16:35:54",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.781936645507813",
+        "pickup_latitude": "40.644622802734375",
+        "dropoff_longitude": "-73.620063781738281",
+        "dropoff_latitude": "40.748886108398437",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "3295"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id2924937",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-03-11 10:42:52",
+        "dropoff_datetime": "2016-03-11 11:15:31",
+        "passenger_count": "2",
+        "pickup_longitude": "-73.86358642578125",
+        "pickup_latitude": "40.768569946289063",
+        "dropoff_longitude": "-73.565681457519531",
+        "dropoff_latitude": "40.709449768066406",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "1959"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id1707579",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-01-19 22:01:49",
+        "dropoff_datetime": "2016-01-19 22:17:12",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.781806945800781",
+        "pickup_latitude": "40.644687652587891",
+        "dropoff_longitude": "-73.658004760742187",
+        "dropoff_latitude": "40.654518127441406",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "923"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id3248847",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-06-23 22:38:10",
+        "dropoff_datetime": "2016-06-23 23:07:38",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.865196228027344",
+        "pickup_latitude": "40.770713806152344",
+        "dropoff_longitude": "-73.692787170410156",
+        "dropoff_latitude": "40.837379455566406",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "1768"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id1607279",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-01-16 07:52:46",
+        "dropoff_datetime": "2016-01-16 07:57:07",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.334022521972656",
+        "pickup_latitude": "40.716030120849609",
+        "dropoff_longitude": "-73.334022521972656",
+        "dropoff_latitude": "40.716030120849609",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "261"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id3436887",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-03-28 22:22:04",
+        "dropoff_datetime": "2016-03-28 22:44:31",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.870887756347656",
+        "pickup_latitude": "40.77374267578125",
+        "dropoff_longitude": "-73.652587890625",
+        "dropoff_latitude": "40.747268676757813",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "1347"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id1506893",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-06-10 02:35:15",
+        "dropoff_datetime": "2016-06-10 03:23:09",
+        "passenger_count": "2",
+        "pickup_longitude": "-73.964065551757813",
+        "pickup_latitude": "40.761062622070313",
+        "dropoff_longitude": "-74.406455993652344",
+        "dropoff_latitude": "40.699733734130859",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2874"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id1828952",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-01-25 00:36:34",
+        "dropoff_datetime": "2016-01-25 01:52:09",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.7982177734375",
+        "pickup_latitude": "40.645061492919922",
+        "dropoff_longitude": "-74.562355041503906",
+        "dropoff_latitude": "40.629268646240234",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "4535"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id0001429",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-05-09 15:08:28",
+        "dropoff_datetime": "2016-05-09 15:11:35",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.424972534179688",
+        "pickup_latitude": "40.779869079589844",
+        "dropoff_longitude": "-73.421531677246094",
+        "dropoff_latitude": "40.7838134765625",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "187"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id2880138",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-02-15 23:26:53",
+        "dropoff_datetime": "2016-02-16 00:14:19",
+        "passenger_count": "5",
+        "pickup_longitude": "-73.790390014648437",
+        "pickup_latitude": "40.646614074707031",
+        "dropoff_longitude": "-73.688949584960938",
+        "dropoff_latitude": "41.044788360595703",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2846"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id2221135",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-05-19 16:02:22",
+        "dropoff_datetime": "2016-05-19 16:49:35",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.776870727539063",
+        "pickup_latitude": "40.64520263671875",
+        "dropoff_longitude": "-73.670158386230469",
+        "dropoff_latitude": "40.653606414794922",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2833"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id3947301",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-06-10 20:23:46",
+        "dropoff_datetime": "2016-06-10 21:13:40",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.873023986816406",
+        "pickup_latitude": "40.774063110351562",
+        "dropoff_longitude": "-73.649703979492187",
+        "dropoff_latitude": "40.583465576171875",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2994"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id3533295",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-04-10 02:36:53",
+        "dropoff_datetime": "2016-04-10 02:37:16",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.653160095214844",
+        "pickup_latitude": "40.633602142333984",
+        "dropoff_longitude": "-73.653160095214844",
+        "dropoff_latitude": "40.63360595703125",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "23"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id3300285",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-06-22 13:50:12",
+        "dropoff_datetime": "2016-06-22 14:44:53",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.787063598632812",
+        "pickup_latitude": "40.641670227050781",
+        "dropoff_longitude": "-73.193267822265625",
+        "dropoff_latitude": "40.809486389160156",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "3281"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id0495486",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-02-14 12:49:33",
+        "dropoff_datetime": "2016-02-14 13:28:35",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.789512634277344",
+        "pickup_latitude": "40.643634796142578",
+        "dropoff_longitude": "-73.422264099121094",
+        "dropoff_latitude": "40.783908843994141",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2342"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id0339742",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-03-08 23:37:14",
+        "dropoff_datetime": "2016-03-08 23:37:59",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.60162353515625",
+        "pickup_latitude": "41.029506683349609",
+        "dropoff_longitude": "-73.60162353515625",
+        "dropoff_latitude": "41.029506683349609",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "45"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id0233910",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-01-18 07:49:12",
+        "dropoff_datetime": "2016-01-18 08:31:23",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.777297973632812",
+        "pickup_latitude": "40.646617889404297",
+        "dropoff_longitude": "-73.608390808105469",
+        "dropoff_latitude": "40.860626220703125",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2531"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id2888107",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-01-05 11:25:56",
+        "dropoff_datetime": "2016-01-05 11:58:27",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.830398559570313",
+        "pickup_latitude": "40.803215026855469",
+        "dropoff_longitude": "-73.542564392089844",
+        "dropoff_latitude": "41.046131134033203",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "1951"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id3255217",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-01-28 21:10:51",
+        "dropoff_datetime": "2016-01-28 22:00:47",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.999275207519531",
+        "pickup_latitude": "40.733497619628906",
+        "dropoff_longitude": "-73.5863037109375",
+        "dropoff_latitude": "40.754058837890625",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2996"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id0024311",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-05-29 17:06:04",
+        "dropoff_datetime": "2016-05-29 17:22:20",
+        "passenger_count": "2",
+        "pickup_longitude": "-73.754631042480469",
+        "pickup_latitude": "40.665790557861328",
+        "dropoff_longitude": "-73.624351501464844",
+        "dropoff_latitude": "40.650859832763672",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "976"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id0158736",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-04-18 10:09:37",
+        "dropoff_datetime": "2016-04-18 10:48:52",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.878875732421875",
+        "pickup_latitude": "40.770912170410156",
+        "dropoff_longitude": "-73.71112060546875",
+        "dropoff_latitude": "41.017261505126953",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2355"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id1269265",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-02-10 14:40:00",
+        "dropoff_datetime": "2016-02-10 15:29:15",
+        "passenger_count": "1",
+        "pickup_longitude": "-74.008453369140625",
+        "pickup_latitude": "40.714218139648437",
+        "dropoff_longitude": "-74.304061889648438",
+        "dropoff_latitude": "40.554824829101563",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2955"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id3747002",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-06-20 00:28:43",
+        "dropoff_datetime": "2016-06-20 00:48:30",
+        "passenger_count": "5",
+        "pickup_longitude": "-73.790016174316406",
+        "pickup_latitude": "40.647266387939453",
+        "dropoff_longitude": "-73.61029052734375",
+        "dropoff_latitude": "40.697017669677734",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "1187"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id0147490",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-03-16 10:07:11",
+        "dropoff_datetime": "2016-03-16 11:27:14",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.986045837402344",
+        "pickup_latitude": "40.761253356933594",
+        "dropoff_longitude": "-73.428367614746094",
+        "dropoff_latitude": "40.869686126708984",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "4803"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id0423267",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-01-25 18:42:09",
+        "dropoff_datetime": "2016-01-25 18:42:17",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.443923950195313",
+        "pickup_latitude": "40.782283782958984",
+        "dropoff_longitude": "-73.443923950195313",
+        "dropoff_latitude": "40.782283782958984",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "8"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id3843001",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-05-28 21:07:58",
+        "dropoff_datetime": "2016-05-28 21:08:11",
+        "passenger_count": "1",
+        "pickup_longitude": "-74.350021362304688",
+        "pickup_latitude": "40.549190521240234",
+        "dropoff_longitude": "-74.350021362304688",
+        "dropoff_latitude": "40.549179077148438",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "13"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id2000225",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-01-15 20:25:02",
+        "dropoff_datetime": "2016-01-15 21:10:39",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.863182067871094",
+        "pickup_latitude": "40.769416809082031",
+        "dropoff_longitude": "-73.849639892578125",
+        "dropoff_latitude": "41.181140899658203",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2737"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id2331972",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-02-09 12:14:45",
+        "dropoff_datetime": "2016-02-09 12:14:49",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.412979125976563",
+        "pickup_latitude": "40.734161376953125",
+        "dropoff_longitude": "-73.412979125976563",
+        "dropoff_latitude": "40.734161376953125",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "4"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id2791549",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-03-21 14:52:01",
+        "dropoff_datetime": "2016-03-21 14:53:45",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.539215087890625",
+        "pickup_latitude": "41.050209045410156",
+        "dropoff_longitude": "-73.539222717285156",
+        "dropoff_latitude": "41.050174713134766",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "104"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id0405561",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-03-26 12:21:27",
+        "dropoff_datetime": "2016-03-26 12:51:37",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.790519714355469",
+        "pickup_latitude": "40.644100189208984",
+        "dropoff_longitude": "-73.670379638671875",
+        "dropoff_latitude": "40.726741790771484",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "1810"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id0479538",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-01-02 20:50:36",
+        "dropoff_datetime": "2016-01-02 22:18:34",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.789871215820313",
+        "pickup_latitude": "40.643409729003906",
+        "dropoff_longitude": "-73.684249877929688",
+        "dropoff_latitude": "41.334739685058594",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "5278"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id2583138",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-03-21 22:32:33",
+        "dropoff_datetime": "2016-03-21 23:18:58",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.97125244140625",
+        "pickup_latitude": "40.755043029785156",
+        "dropoff_longitude": "-73.688026428222656",
+        "dropoff_latitude": "40.829982757568359",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2785"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id0203044",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-04-11 21:30:44",
+        "dropoff_datetime": "2016-04-11 22:21:05",
+        "passenger_count": "1",
+        "pickup_longitude": "-74.00201416015625",
+        "pickup_latitude": "40.709056854248047",
+        "dropoff_longitude": "-73.530029296875",
+        "dropoff_latitude": "40.667381286621094",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "3021"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id2868671",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-02-17 00:10:47",
+        "dropoff_datetime": "2016-02-17 00:12:08",
+        "passenger_count": "2",
+        "pickup_longitude": "-73.690879821777344",
+        "pickup_latitude": "40.585086822509766",
+        "dropoff_longitude": "-73.690879821777344",
+        "dropoff_latitude": "40.585086822509766",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "81"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id1311087",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-02-29 12:16:29",
+        "dropoff_datetime": "2016-02-29 18:47:09",
+        "passenger_count": "3",
+        "pickup_longitude": "-75.455917358398438",
+        "pickup_latitude": "39.803932189941406",
+        "dropoff_longitude": "-73.7960205078125",
+        "dropoff_latitude": "40.707725524902344",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "23440"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id3809655",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-06-06 04:57:41",
+        "dropoff_datetime": "2016-06-06 05:32:36",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.781806945800781",
+        "pickup_latitude": "40.644855499267578",
+        "dropoff_longitude": "-73.578987121582031",
+        "dropoff_latitude": "40.828136444091797",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2095"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id3177399",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-01-07 18:26:46",
+        "dropoff_datetime": "2016-01-07 19:24:55",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.867019653320313",
+        "pickup_latitude": "40.77081298828125",
+        "dropoff_longitude": "-73.455970764160156",
+        "dropoff_latitude": "40.881290435791016",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "3489"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id2979663",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-04-04 17:48:04",
+        "dropoff_datetime": "2016-04-04 18:28:24",
+        "passenger_count": "3",
+        "pickup_longitude": "-73.781867980957031",
+        "pickup_latitude": "40.644901275634766",
+        "dropoff_longitude": "-73.677284240722656",
+        "dropoff_latitude": "40.677864074707031",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2420"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id1345848",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-05-10 20:10:07",
+        "dropoff_datetime": "2016-05-10 20:45:53",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.781867980957031",
+        "pickup_latitude": "40.644691467285156",
+        "dropoff_longitude": "-73.421852111816406",
+        "dropoff_latitude": "40.783756256103516",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2146"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id1119423",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-03-24 22:35:52",
+        "dropoff_datetime": "2016-03-24 23:23:38",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.990753173828125",
+        "pickup_latitude": "40.725959777832031",
+        "dropoff_longitude": "-73.556167602539062",
+        "dropoff_latitude": "40.651348114013672",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2866"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id1935619",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-03-10 18:39:24",
+        "dropoff_datetime": "2016-03-10 19:23:05",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.873626708984375",
+        "pickup_latitude": "40.773918151855469",
+        "dropoff_longitude": "-73.629890441894531",
+        "dropoff_latitude": "41.034549713134766",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2621"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id3848011",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-06-20 07:23:08",
+        "dropoff_datetime": "2016-06-20 07:54:21",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.779197692871094",
+        "pickup_latitude": "40.647598266601563",
+        "dropoff_longitude": "-73.648040771484375",
+        "dropoff_latitude": "40.681991577148437",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "1873"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id2609192",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-05-20 07:46:36",
+        "dropoff_datetime": "2016-05-20 08:25:32",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.776679992675781",
+        "pickup_latitude": "40.645339965820313",
+        "dropoff_longitude": "-73.698677062988281",
+        "dropoff_latitude": "40.795059204101563",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "2336"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id2857145",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-03-13 07:25:48",
+        "dropoff_datetime": "2016-03-13 07:46:36",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.849998474121094",
+        "pickup_latitude": "40.688346862792969",
+        "dropoff_longitude": "-73.699287414550781",
+        "dropoff_latitude": "40.679046630859375",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "1248"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id1347863",
+        "vendor_id": "2",
+        "pickup_datetime": "2016-03-18 14:46:28",
+        "dropoff_datetime": "2016-03-18 16:06:26",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.975784301757812",
+        "pickup_latitude": "40.746437072753906",
+        "dropoff_longitude": "-73.501266479492188",
+        "dropoff_latitude": "40.826301574707031",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "4798"
+      }
+    },
+    {
+      "reason": "Coordinates outside NYC bounds",
+      "data": {
+        "id": "id0205360",
+        "vendor_id": "1",
+        "pickup_datetime": "2016-01-25 19:25:23",
+        "dropoff_datetime": "2016-01-25 19:31:10",
+        "passenger_count": "1",
+        "pickup_longitude": "-73.577423095703125",
+        "pickup_latitude": "40.722755432128906",
+        "dropoff_longitude": "-73.574859619140625",
+        "dropoff_latitude": "40.72259521484375",
+        "store_and_fwd_flag": "N",
+        "trip_duration": "347"
+      }
+    }
+  ]
+}
