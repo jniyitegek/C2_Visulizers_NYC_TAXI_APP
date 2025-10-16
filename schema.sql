@@ -1,0 +1,26 @@
+
+CREATE TABLE trips (
+    id TEXT PRIMARY KEY,
+    vendor_id INTEGER,
+    pickup_datetime TEXT,
+    dropoff_datetime TEXT,
+    passenger_count INTEGER,
+    pickup_longitude REAL,
+    pickup_latitude REAL,
+    dropoff_longitude REAL,
+    dropoff_latitude REAL,
+    store_and_fwd_flag TEXT,
+    trip_duration INTEGER,
+    distance_km REAL,
+    speed_kmh REAL,
+    trip_duration_minutes REAL,
+    hour_of_day INTEGER,
+    day_of_week INTEGER,
+    is_weekend INTEGER,
+    time_category TEXT,
+    is_rush_hour INTEGER,
+    pickup_date TEXT,
+    pickup_time TEXT,
+    dropoff_date TEXT,
+    dropoff_time TEXT
+);
