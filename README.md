@@ -1,9 +1,11 @@
 # NYC Taxi Web Application
 
-A simple trip management application with a Node.js backend and vanilla JavaScript frontend.
-
 ## Project Overview
 This is a comprehensive README.md file for the NYC Trips web-app, which analyzes data from the New York City Taxi Trip dataset, and presents the data on the interactive dashboard.
+
+### Video walkthrough
+
+Watch [this video](https://youtu.be/xirx2iyTG-M) to visually learn more about the features, and technical approach to building the platform
 
 ## Project Structure
 ```
