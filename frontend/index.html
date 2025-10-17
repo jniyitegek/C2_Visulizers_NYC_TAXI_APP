@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYC Taxi - Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>NYC Taxi Trips</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item">Dashboard</a>
+                <a href="tripdetails.html" class="nav-item">Trip Details</a>
+            </nav>
+            <button class="hamburger" id="hamburger">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h2>Dashboard</h2>
+                <p class="page-subtitle">Overview of NYC Taxi trip analytics and metrics.</p>
+            </div>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-label">Total Trips</div>
+                    <div class="metric-value" id="totalTrips">0</div>
+                    
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Average Duration</div>
+                    <div class="metric-value" id="avgDuration">0 mins</div>
+                    
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Busiest Hours</div>
+                    <div class="metric-value" id="busiestHours">--</div>
+                    <div class="metric-trend">Peak traffic time</div>
+                </div>
+            </div>
+
+            <div class="analytics-grid">
+                <div class="analytics-card map-section">
+                    <div class="card-header" style="display: flex; justify-content: space-between; align-items: center;">
+                        <h3>Trip Locations</h3>
+                        <div id="pagination">
+                            <div>
+                                Showing <span id="tripsBegin">1</span> - <span id="tripsEnd">100</span>  of <span id="totalTrips2"></span>
+                            </div>
+                            <button class="pag1" onclick="getPreviousTrips()">
+                                Previous
+                            </b>
+                            <button class="pag2" onclick="getNextTrips()">
+                                Next
+                            </button>
+                        </div>
+                    </div>
+                    <div id="map" class="map-container"></div>
+                </div>
+
+                <div class="analytics-card">
+                    <div class="card-header">
+                        <h3>Trips by Hour</h3>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="timeChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="analytics-card">
+                <div class="card-header">
+                    <h3>Recent Trips</h3>
+                </div>
+
+                <div class="sort-controls">
+                    <label for="sortOption">Sort By:</label>
+                    <select id="sortOption">
+                        <option value="pickup_datetime_desc">Pickup Time (Newest)</option>
+                        <option value="pickup_datetime_asc">Pickup Time (Oldest)</option>
+                        <option value="trip_duration_desc">Duration (Longest)</option>
+                        <option value="trip_duration_asc">Duration (Shortest)</option>
+                        <option value="passenger_count_desc">Passengers (Highest)</option>
+                        <option value="passenger_count_asc">Passengers (Lowest)</option>
+                    </select>
+                </div>
+
+                <div class="table-container">
+                    <table class="data-table">
+                        <div id="pagination">
+                            <div>
+                                Showing <span id="tripsBegin2">1</span> - <span id="tripsEnd2">100</span>  of <span id="totalTrips2"></span>
+                            </div>
+                            <button class="pag1" onclick="getPreviousTrips()">
+                                Previous
+                            </b>
+                            <button class="pag2" onclick="getNextTrips()">
+                                Next
+                            </button>
+                        </div>
+                        <thead>
+                            <tr>
+                                <th>Trip ID</th>
+                                <th>Pickup Time</th>
+                                <th>Duration</th>
+                                <th>Passengers</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tripData">
+                            <tr>
+                                <td colspan="5" style="text-align: center; padding: 2rem; color: #7f8c8d;">
+                                    Loading trips...
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <style>
+                        #pagination{
+                            display: flex;
+                            justify-content: end;
+                            align-items: center;
+                            gap: 5px;
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                        }
+                        .pag1, .pag2{
+                            background: #0D3B66 !important;
+                            color: white;
+                            border: 1px solid lightgray;
+                            padding: 8px;
+                            border-radius: 5px;
+                            cursor: pointer;
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 C2 Visualizers Made it. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        // Dashboard specific logic
+        let map;
+        let chartManager;
+        let allTrips = [];
+        const MAX_TABLE_ROWS = 100;
+        let sortManager;
+        let currentSortedAndFilteredTrips = [];
+
+        let from = 0
+        let limit = 100
+
+        const insertInTable = (trips) => {
+
+        }
+
+        async function initDashboard() {
+            chartManager = new ChartManager();
+
+            try {
+                // Show loading state
+                console.log('Initializing dashboard...');
+
+                const data = await getDashboardMetrics();
+                console.log('Data loaded:', data);
+
+                const totalTrips = await getTotalTrips();
+                document.getElementById('totalTrips2').innerHTML = totalTrips.total.toLocaleString();
+
+
+
+                allTrips = data.trips || [];
+
+                if (allTrips.length === 0) {
+                    console.warn('No trips data available');
+                    document.getElementById('tripData').innerHTML = `
+                        <tr>
+                            <td colspan="5" style="text-align: center; padding: 2rem; color: #e74c3c;">
+                                No trips data available
+                            </td>
+                        </tr>
+                    `;
+                    return;
+                }
+
+                updateMetrics(data);
+
+                // Initialize with all trips
+                currentSortedAndFilteredTrips = [...allTrips];
+
+                // 1. Setup the Sorting Manager
+                sortManager = new SortManager(
+                    allTrips,
+                    'sortOption',
+                    (sortedTrips) => {
+                        console.log('Sort callback triggered with', sortedTrips.length, 'trips');
+                        currentSortedAndFilteredTrips = sortedTrips;
+                        populateTable(sortedTrips);
+                    }
+                );
+
+                // Trigger initial sort with default option
+                const defaultSortKey = document.getElementById('sortOption').value;
+                console.log('Triggering initial sort with:', defaultSortKey);
+                sortManager.sortAndTriggerUpdate(defaultSortKey);
+
+                // 2. Setup the Search Manager
+                new SearchManager(
+                    'searchInput',
+                    (filteredData) => {
+                        console.log('Search callback triggered with', filteredData.length, 'trips');
+                        sortManager.updateData(filteredData);
+                    },
+                    allTrips
+                );
+
+                // Create visualizations
+                createMap(data.trips);
+                await createTimeChart(data.trips);
+
+                console.log('Dashboard initialized successfully');
+
+            } catch (error) {
+                console.error('Error initializing dashboard:', error);
+                document.getElementById('tripData').innerHTML = `
+                    <tr>
+                        <td colspan="5" style="text-align: center; padding: 2rem; color: #e74c3c;">
+                            Error loading data: ${error.message}
+                        </td>
+                    </tr>
+                `;
+            }
+        }
+
+        function updatePagination(from, data) {
+            populateTable(data);
+            createMap(data);
+            document.getElementById("tripsBegin").textContent = from + 1;
+            document.getElementById("tripsBegin2").textContent = from + 1;
+            document.getElementById("tripsEnd").textContent = from + limit;
+            document.getElementById("tripsEnd2").textContent = from + limit;
+        }
+
+        async function getPreviousTrips() {
+            from = Math.max(0, from - limit);
+            const data = await getTrips(from);
+            // populateTable(data);
+            updatePagination(from, data);
+        }
+
+        async function getNextTrips() {
+            from += limit;
+            const data = await getTrips(from);
+            // populateTable(data);
+            updatePagination(from, data);
+        }
+        
+        // ---------------------------------------------
+        // FUNCTION: populateTable
+        // ---------------------------------------------
+        function populateTable(trips) {
+            const tbody = document.getElementById('tripData');
+
+            if (!tbody) {
+                console.error('Table body element not found');
+                return;
+            }
+
+            if (!trips || trips.length === 0) {
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="5" style="text-align: center; padding: 2rem; color: #7f8c8d;">
+                            No trips found
+                        </td>
+                    </tr>
+                `;
+                return;
+            }
+
+            tbody.innerHTML = '';
+
+            // Only display the top N rows
+            const displayTrips = trips.slice(0, MAX_TABLE_ROWS);
+            console.log('Populating table with', displayTrips.length, 'trips');
+
+            displayTrips.forEach(trip => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>${trip.id}</td>
+                    <td>${utils.formatDateTime(trip.pickup_datetime)}</td>
+                    <td>${trip.trip_duration_minutes} mins</td>
+                    <td>${trip.passenger_count}</td>
+                    <td><a href="tripdetails.html?id=${trip.id}" class="btn-link">View</a></td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        // ---------------------------------------------
+        // FUNCTION: updateMetrics
+        // ---------------------------------------------
+        function updateMetrics(data) {
+            const totalTripsEl = document.getElementById('totalTrips');
+            const totalTripsEl3 = document.getElementById('totalTrips3');
+            const avgDurationEl = document.getElementById('avgDuration');
+            const busiestHoursEl = document.getElementById('busiestHours');
+
+            if (totalTripsEl) totalTripsEl.textContent = data.totalTrips || 0;
+            if (totalTripsEl3) totalTripsEl3.innerHTML = data.totalTrips || 0;
+            if (avgDurationEl) avgDurationEl.textContent = (data.avgDuration || 0) + ' mins';
+            if (busiestHoursEl) busiestHoursEl.textContent = data.busiestHours || '--';
+        }
+
+        function createMap(trips) {
+            try {
+                const mapElement = document.getElementById('map');
+                if (!mapElement) {
+                    console.error('Map element not found');
+                    return;
+                }
+                if (map) {
+                    map.remove();
+                    map = null;
+                }
+
+                map = L.map('map').setView([40.7128, -73.98], 11);
+
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '© OpenStreetMap contributors',
+                    maxZoom: 19
+                }).addTo(map);
+
+                if (!trips || trips.length === 0) {
+                    console.warn('No trips to display on map');
+                    return;
+                }
+
+                trips.forEach(trip => {
+                    if (trip.pickup_latitude && trip.pickup_longitude) {
+                        L.marker([trip.pickup_latitude, trip.pickup_longitude])
+                            .addTo(map)
+                            .bindPopup(`<b>${trip.id}</b><br>Duration: ${trip.trip_duration_minutes} mins`);
+                    }
+                });
+
+                console.log('Map created with', trips.length, 'markers');
+            } catch (error) {
+                console.error('Error creating map:', error);
+            }
+        }
+
+        // ---------------------------------------------
+        // FUNCTION: createTimeChart
+        // ---------------------------------------------
+        async function createTimeChart(trips) {
+            const counts = await getTripsByHour();
+            try {
+                if (!trips || trips.length === 0) {
+                    console.warn('No trips to display in chart');
+                    return;
+                }
+
+
+                // trips.forEach(trip => {
+                //     if (trip.pickup_datetime) {
+                //         const hour = new Date(trip.pickup_datetime).getHours();
+                //         if (hour >= 0 && hour < 24) {
+                //             counts[hour]++;
+                //         }
+                //     }
+                // });
+
+                chartManager.createBarChart('timeChart', {
+                    labels: Array.from({ length: 24 }, (_, i) => i + ':00'),
+                    datasets: [{
+                        label: 'Trips per Hour',
+                        data: counts,
+                        backgroundColor: '#3498db',
+                        borderRadius: 4
+                    }]
+                });
+
+                console.log('Time chart created');
+            } catch (error) {
+                console.error('Error creating time chart:', error);
+            }
+        }
+
+        // Initialize when DOM is ready
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('DOM loaded, initializing dashboard...');
+            initDashboard();
+        });
+
+        // Hamburger menu
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+
+</html>
